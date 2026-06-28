@@ -1,4 +1,4 @@
-const registrationOpen = false;
+const registrationOpen = true;
 const SUPABASE_URL = "https://krqurvsnizqmcanxkqgx.supabase.co";
 
 const SUPABASE_KEY =
