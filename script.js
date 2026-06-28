@@ -1,4 +1,4 @@
-const registrationOpen = true;
+const registrationOpen = false;
 const SUPABASE_URL = "https://krqurvsnizqmcanxkqgx.supabase.co";
 
 const SUPABASE_KEY =
@@ -18,6 +18,10 @@ if (!registrationOpen) {
 form.addEventListener("submit", async (e) => {
 
     e.preventDefault();
+    if (!registrationOpen) {
+    alert("Registrations are currently closed.");
+    return;
+}
 
     const paymentFile = document.getElementById("payment").files[0];
 
