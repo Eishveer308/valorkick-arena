@@ -11,9 +11,10 @@ const supabaseClient = window.supabase.createClient(
 
 const form = document.getElementById("registrationForm");
 if (!registrationOpen) {
-    form.style.display = "none";
     document.getElementById("registrationClosed").style.display = "block";
+    form.style.display = "none";
 }
+
 
 form.addEventListener("submit", async (e) => {
 
