@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - ValorKick Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ValorKick Arena</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>FC 26 Registration</h2>
+
+<form id="registrationForm">
+
+<input type="text" id="name" name="name" placeholder="Full Name" required>
+
+<input type="number" id="age" name="age" placeholder="Age" required>
+
+<input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+
+<input type="email" id="email" name="email" placeholder="Email Address" required>
+
+<input type="text" id="city" name="city" placeholder="City" required>
+
+<select id="platform" name="platform" required>
+<option value="">Select Platform</option>
+<option value="ps5">PlayStation 5</option>
+<option value="xbox">Xbox Series X|S</option>
+<option value="pc">PC</option>
+</select>
+
+<input type="text" id="gameid" name="gameid" placeholder="Game ID" required>
+
+<h3>Entry Fee: ₹300</h3>
+
+<p><strong>UPI ID:</strong> 7051019572@fam</p>
+
+<img src="fampay-qr.png" class="qr">
+
+<label><strong>Upload Payment Screenshot</strong></label>
+
+<input type="file" id="payment" name="payment" accept="image/*" required>
+
+<button type="submit">Register Now</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 ValorKick Arena
+</footer>
+
+<script src="https://unpkg.com/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
