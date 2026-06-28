@@ -10,19 +10,13 @@ const supabaseClient = window.supabase.createClient(
 );
 
 const form = document.getElementById("registrationForm");
-if (!registrationOpen) {
-    document.getElementById("registrationClosed").style.display = "block";
-    form.style.display = "none";
-}
+
 
 
 form.addEventListener("submit", async (e) => {
 
     e.preventDefault();
-    if (!registrationOpen) {
-    alert("Registrations are currently closed.");
-    return;
-}
+    
 
     const paymentFile = document.getElementById("payment").files[0];
 
